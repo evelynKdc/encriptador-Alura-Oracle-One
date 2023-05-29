@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Encriptador Alura + Oracle One</title>
+  </head>
+  <body class="container">
+    <main class="mainContainer">
+      <img src="./rsc/Logo.png" alt="logo Alura" class="logoAlura">
+      <div class="inputsContainer">
+        <input
+          type="text"
+          id="textToTransform"
+          class="inputsContainer__input"
+          placeholder="Escribe el texto aqui....."
+        />
+
+        <div class="inputsContainer__bottom">
+          <p class="infoContainer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-info-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+              />
+              <path
+                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"
+              />
+            </svg>
+            <span> Solo letras minusculas y sin acentos </span>
+          </p>
+          <div class="buttonsContainer">
+            <button id="encryptButton" class="button button--encrypt">Encriptar!</button>
+            <button id="decryptButton" class="button button--decrypt">Desencriptar!</button>
+          </div>
+        </div>
+      </div>
+      <div class="resultContainer">
+        <textarea
+          name="textResult"
+          id="textResult"
+          cols="30"
+          rows="1"
+          class="txtArea"
+          readonly
+        ></textarea>
+        <div class="messageContainer" id="messageContainer">
+          <img src="./rsc/Muñeco.png" alt="muñeco de mensaje vacio" class="messageDraw">
+          <p class="messageText messageText--bold">Ningún mensaje fue encontrado</p>
+          <p class="messageText messageText--light">Ingresa el texto que desea encriptar o descencriptar</p>
+        </div>
+        <button id="copybutton" class="button button--copy">Copiar</button>
+      </div>
+    </main>
+    <footer class="footerContainer">
+      <p>
+        Made by ❤️
+        <a href="https://www.linkedin.com/in/evelyn-de-la-cruz-vargas/"
+          >Evelyn</a
+        >
+      </p>
+      <p class="socialNetwork">
+        <a href="https://github.com/evelynKdc" class="socialNetwork__link"
+          ><img src="./rsc/icons/githubIcon.svg" alt="cuenta github Evelyn"
+        /></a>
+        <a href="https://www.linkedin.com/in/evelyn-de-la-cruz-vargas/" class="socialNetwork__link"
+          ><img
+            src="./rsc//icons/linkedinIcon.svg"
+            alt="Linkedin Evelyn De la cruz"
+        /></a>
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
