@@ -13,7 +13,8 @@ const messageContainer = document.getElementById("messageContainer");
 
 const encrypt = () => {
   const text = txtInput.value;
-  let encrypted = text.replace(/e/gim, "enter");
+  const lowerText = text.toLowerCase();
+  let encrypted = lowerText.replace(/e/gim, "enter");
   encrypted = encrypted.replace(/i/gim, "ines");
   encrypted = encrypted.replace(/a/gim, "ai");
   encrypted = encrypted.replace(/o/gim, "ober");
@@ -25,8 +26,9 @@ const encrypt = () => {
 };
 
 const descrypt = () => {
-  const textDecrypt = txtInput.value;
-  let decrypted = textDecrypt.replace(/enter/gim, "e");
+  const text = txtInput.value;
+  const lowerText = text.toLowerCase();
+  let decrypted = lowerText.replace(/enter/gim, "e");
   decrypted = decrypted.replace(/ines/gim, "i");
   decrypted = decrypted.replace(/ai/gim, "a");
   decrypted = decrypted.replace(/ober/gim, "o");
